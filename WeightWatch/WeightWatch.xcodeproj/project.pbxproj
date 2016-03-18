@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		269727431C9C367700E34409 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269727421C9C367700E34409 /* WelcomeViewController.swift */; };
 		26A5259B1C9B72F6009556B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A5259A1C9B72F6009556B4 /* AppDelegate.swift */; };
 		26A5259D1C9B72F6009556B4 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A5259C1C9B72F6009556B4 /* FirstViewController.swift */; };
 		26A5259F1C9B72F6009556B4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A5259E1C9B72F6009556B4 /* SecondViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		269727421C9C367700E34409 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		26A525971C9B72F6009556B4 /* WeightWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeightWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26A5259A1C9B72F6009556B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26A5259C1C9B72F6009556B4 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 		26A525991C9B72F6009556B4 /* WeightWatch */ = {
 			isa = PBXGroup;
 			children = (
+				269727421C9C367700E34409 /* WelcomeViewController.swift */,
 				26A525AE1C9B749B009556B4 /* User.swift */,
 				26A5259A1C9B72F6009556B4 /* AppDelegate.swift */,
 				26A5259C1C9B72F6009556B4 /* FirstViewController.swift */,
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26A525AF1C9B749B009556B4 /* User.swift in Sources */,
+				269727431C9C367700E34409 /* WelcomeViewController.swift in Sources */,
 				26A5259F1C9B72F6009556B4 /* SecondViewController.swift in Sources */,
 				26A5259B1C9B72F6009556B4 /* AppDelegate.swift in Sources */,
 				26A5259D1C9B72F6009556B4 /* FirstViewController.swift in Sources */,
@@ -293,6 +297,7 @@
 				26A525AD1C9B72F6009556B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
