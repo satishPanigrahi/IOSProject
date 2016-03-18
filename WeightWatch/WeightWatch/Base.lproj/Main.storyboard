@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -89,7 +90,7 @@
         <!--Welcome-->
         <scene sceneID="NM1-AU-djZ">
             <objects>
-                <viewController id="c0d-Xa-t15" userLabel="Welcome" sceneMemberID="viewController">
+                <viewController id="c0d-Xa-t15" userLabel="Welcome" customClass="WelcomeViewController" customModule="WeightWatch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5j1-ZH-vTg"/>
                         <viewControllerLayoutGuide type="bottom" id="aGD-ec-Etw"/>
@@ -174,29 +175,29 @@
                                         <exclude reference="y65-8O-CxG"/>
                                     </mask>
                                     <mask key="constraints">
+                                        <exclude reference="Ojx-Mf-h8e"/>
+                                        <exclude reference="VZy-f2-xE3"/>
+                                        <exclude reference="Zbt-Zr-lxt"/>
+                                        <exclude reference="mFS-fT-Ygc"/>
+                                        <exclude reference="r8a-i7-TVY"/>
+                                        <exclude reference="54S-3N-9xk"/>
+                                        <exclude reference="Fce-2X-Y0Q"/>
+                                        <exclude reference="uzZ-dJ-GdI"/>
                                         <exclude reference="1zr-TU-Bwx"/>
                                         <exclude reference="Zz6-xu-XHh"/>
                                         <exclude reference="fda-ef-CSf"/>
                                         <exclude reference="l9j-JQ-fWa"/>
                                         <exclude reference="v3y-m5-TAx"/>
-                                        <exclude reference="54S-3N-9xk"/>
-                                        <exclude reference="Fce-2X-Y0Q"/>
-                                        <exclude reference="uzZ-dJ-GdI"/>
-                                        <exclude reference="mFS-fT-Ygc"/>
-                                        <exclude reference="r8a-i7-TVY"/>
                                         <exclude reference="HZF-8H-R9R"/>
                                         <exclude reference="L1U-v3-glb"/>
                                         <exclude reference="Org-ar-OoO"/>
                                         <exclude reference="QRw-il-j50"/>
-                                        <exclude reference="LTT-Ih-TPu"/>
-                                        <exclude reference="NFY-Gg-g36"/>
-                                        <exclude reference="SdY-lI-BgA"/>
-                                        <exclude reference="Ojx-Mf-h8e"/>
-                                        <exclude reference="VZy-f2-xE3"/>
-                                        <exclude reference="Zbt-Zr-lxt"/>
                                         <exclude reference="7wk-xa-SHr"/>
                                         <exclude reference="m7q-Kc-1Wh"/>
                                         <exclude reference="wry-NL-LIZ"/>
+                                        <exclude reference="LTT-Ih-TPu"/>
+                                        <exclude reference="NFY-Gg-g36"/>
+                                        <exclude reference="SdY-lI-BgA"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
@@ -210,29 +211,29 @@
                                         <include reference="y65-8O-CxG"/>
                                     </mask>
                                     <mask key="constraints">
+                                        <include reference="Ojx-Mf-h8e"/>
+                                        <include reference="VZy-f2-xE3"/>
+                                        <include reference="Zbt-Zr-lxt"/>
+                                        <include reference="mFS-fT-Ygc"/>
+                                        <include reference="r8a-i7-TVY"/>
+                                        <include reference="54S-3N-9xk"/>
+                                        <include reference="Fce-2X-Y0Q"/>
+                                        <include reference="uzZ-dJ-GdI"/>
                                         <include reference="1zr-TU-Bwx"/>
                                         <include reference="Zz6-xu-XHh"/>
                                         <include reference="fda-ef-CSf"/>
                                         <include reference="l9j-JQ-fWa"/>
                                         <include reference="v3y-m5-TAx"/>
-                                        <include reference="54S-3N-9xk"/>
-                                        <include reference="Fce-2X-Y0Q"/>
-                                        <include reference="uzZ-dJ-GdI"/>
-                                        <include reference="mFS-fT-Ygc"/>
-                                        <include reference="r8a-i7-TVY"/>
                                         <include reference="HZF-8H-R9R"/>
                                         <include reference="L1U-v3-glb"/>
                                         <include reference="Org-ar-OoO"/>
                                         <include reference="QRw-il-j50"/>
-                                        <include reference="LTT-Ih-TPu"/>
-                                        <include reference="NFY-Gg-g36"/>
-                                        <include reference="SdY-lI-BgA"/>
-                                        <include reference="Ojx-Mf-h8e"/>
-                                        <include reference="VZy-f2-xE3"/>
-                                        <include reference="Zbt-Zr-lxt"/>
                                         <include reference="7wk-xa-SHr"/>
                                         <include reference="m7q-Kc-1Wh"/>
                                         <include reference="wry-NL-LIZ"/>
+                                        <include reference="LTT-Ih-TPu"/>
+                                        <include reference="NFY-Gg-g36"/>
+                                        <include reference="SdY-lI-BgA"/>
                                     </mask>
                                 </variation>
                             </scrollView>
