@@ -14,11 +14,24 @@ class WelcomeViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+    }
+    // added: Satish // TODO for IOS 9
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        UIApplication.sharedApplication().setStatusBarHidden(true, withAnimation: .Slide)
+        
+    }
+    
+    // added:Satish // TODO: for IOS 9
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        UIApplication.sharedApplication().setStatusBarHidden(false, withAnimation: .Slide)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        // Dispose of any resources that can be recreated.]
     }
     
 
