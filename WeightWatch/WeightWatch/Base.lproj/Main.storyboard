@@ -99,20 +99,38 @@
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3k4-3T-lw5">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="44" width="400" height="756"/>
+                                </variation>
                             </scrollView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Hp-eu-1fh">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="wbV-Rl-SQV">
+                                        <barButtonItem key="rightBarButtonItem" title="Finish" id="bPD-mS-Bnr"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="3Hp-eu-1fh" firstAttribute="top" secondItem="qIm-hL-EaE" secondAttribute="top" id="JpY-KZ-zkE"/>
+                            <constraint firstItem="3Hp-eu-1fh" firstAttribute="leading" secondItem="qIm-hL-EaE" secondAttribute="leading" id="Woy-BA-83f"/>
                             <constraint firstItem="3k4-3T-lw5" firstAttribute="top" secondItem="qIm-hL-EaE" secondAttribute="top" id="e57-ky-YsN"/>
                             <constraint firstItem="3k4-3T-lw5" firstAttribute="leading" secondItem="qIm-hL-EaE" secondAttribute="leading" id="oSW-BN-JW2"/>
                             <constraint firstItem="aGD-ec-Etw" firstAttribute="top" secondItem="3k4-3T-lw5" secondAttribute="bottom" id="y4h-Sq-Np3"/>
                             <constraint firstAttribute="trailing" secondItem="3k4-3T-lw5" secondAttribute="trailing" id="ykR-Zo-5cQ"/>
+                            <constraint firstAttribute="trailing" secondItem="3Hp-eu-1fh" secondAttribute="trailing" id="zhE-AF-eAs"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="3k4-3T-lw5"/>
+                                <exclude reference="3Hp-eu-1fh"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="JpY-KZ-zkE"/>
+                                <exclude reference="Woy-BA-83f"/>
+                                <exclude reference="zhE-AF-eAs"/>
                                 <exclude reference="e57-ky-YsN"/>
                                 <exclude reference="oSW-BN-JW2"/>
                                 <exclude reference="ykR-Zo-5cQ"/>
@@ -122,8 +140,12 @@
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="3k4-3T-lw5"/>
+                                <include reference="3Hp-eu-1fh"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="JpY-KZ-zkE"/>
+                                <include reference="Woy-BA-83f"/>
+                                <include reference="zhE-AF-eAs"/>
                                 <include reference="e57-ky-YsN"/>
                                 <include reference="oSW-BN-JW2"/>
                                 <include reference="ykR-Zo-5cQ"/>
@@ -131,6 +153,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sZZ-Rv-If4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
