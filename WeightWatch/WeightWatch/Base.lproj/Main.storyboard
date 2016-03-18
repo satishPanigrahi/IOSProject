@@ -99,8 +99,56 @@
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3k4-3T-lw5">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="44" width="400" height="756"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bfg-2S-2sv">
+                                        <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="8" y="93" width="384" height="30"/>
+                                        </variation>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Height" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B8p-xN-Oxa">
+                                        <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="8" y="142" width="384" height="30"/>
+                                        </variation>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Weight goal" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dyF-08-DEC">
+                                        <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="8" y="245" width="384" height="30"/>
+                                        </variation>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Weight" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5nR-2y-5n0">
+                                        <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="8" y="195" width="384" height="30"/>
+                                        </variation>
+                                    </textField>
+                                </subviews>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="Bfg-2S-2sv"/>
+                                        <exclude reference="B8p-xN-Oxa"/>
+                                        <exclude reference="dyF-08-DEC"/>
+                                        <exclude reference="5nR-2y-5n0"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
+                                    <mask key="subviews">
+                                        <include reference="Bfg-2S-2sv"/>
+                                        <include reference="B8p-xN-Oxa"/>
+                                        <include reference="dyF-08-DEC"/>
+                                        <include reference="5nR-2y-5n0"/>
+                                    </mask>
                                 </variation>
                             </scrollView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Hp-eu-1fh">
@@ -128,13 +176,13 @@
                                 <exclude reference="3Hp-eu-1fh"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="y4h-Sq-Np3"/>
                                 <exclude reference="JpY-KZ-zkE"/>
                                 <exclude reference="Woy-BA-83f"/>
                                 <exclude reference="zhE-AF-eAs"/>
                                 <exclude reference="e57-ky-YsN"/>
                                 <exclude reference="oSW-BN-JW2"/>
                                 <exclude reference="ykR-Zo-5cQ"/>
-                                <exclude reference="y4h-Sq-Np3"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -143,13 +191,13 @@
                                 <include reference="3Hp-eu-1fh"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="y4h-Sq-Np3"/>
                                 <include reference="JpY-KZ-zkE"/>
                                 <include reference="Woy-BA-83f"/>
                                 <include reference="zhE-AF-eAs"/>
                                 <include reference="e57-ky-YsN"/>
                                 <include reference="oSW-BN-JW2"/>
                                 <include reference="ykR-Zo-5cQ"/>
-                                <include reference="y4h-Sq-Np3"/>
                             </mask>
                         </variation>
                     </view>
