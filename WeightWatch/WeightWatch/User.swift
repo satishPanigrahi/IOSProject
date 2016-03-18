@@ -31,7 +31,8 @@ class User: NSObject {
     var time: Int!
     var hasLoaded = false
     //==========
-// Singleton: Alaways access the current user
+    
+    // Singleton: Alaways access the current user
     
     class var currentUser: User
         {
@@ -49,7 +50,7 @@ class User: NSObject {
             return Static.instance!
     }
     
-// Initilize user object
+    // Initilize user object
     
     init(data: [String: AnyObject]) {
         super.init()
@@ -64,7 +65,7 @@ class User: NSObject {
         
     }
     
-// initialize without any parameter
+    // initialize without any parameter
     override init() {
         super.init()
         
@@ -77,9 +78,9 @@ class User: NSObject {
         time = 0
     }
     
-// BMI calculation
-//metricUnits: Kilogram for weights and meters for weight
-//empericalUnits: pound for weight and feet for height
+    // BMI calculation
+    //metricUnits: Kilogram for weights and meters for weight
+    //empericalUnits: pound for weight and feet for height
     func calculateBMI(){
         if units == metricUnits{
             self.BMI = weight/(height * height)
@@ -89,5 +90,20 @@ class User: NSObject {
             self.BMI = (weight * 703) / (denominator * denominator)
         }
     }
+    
+    // To save User data
+    func saveUser(){
+        var data: [String: AnyObject] = ["": 0]
+        data[userAgeKey] = age
+        data[userHeightKey] = height
+        data[userWeightKey] = weight
+        data[userUnitsKey] = units
+        data[userGoalKey] = goal
+        data[userTimeKey] = time
+        
+        NSUserDefaults.standardUserDefaults().setObject(data, forKey: userDataKey)
+
+    }
+    
     
 }
