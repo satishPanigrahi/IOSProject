@@ -132,6 +132,16 @@
                                             <rect key="frame" x="8" y="195" width="384" height="30"/>
                                         </variation>
                                     </textField>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6EY-4J-eT2">
+                                        <rect key="frame" x="-60" y="-14" width="121" height="29"/>
+                                        <segments>
+                                            <segment title="Empirical Units"/>
+                                            <segment title="Metric Units"/>
+                                        </segments>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="8" y="301" width="384" height="29"/>
+                                        </variation>
+                                    </segmentedControl>
                                 </subviews>
                                 <variation key="default">
                                     <mask key="subviews">
@@ -139,6 +149,7 @@
                                         <exclude reference="B8p-xN-Oxa"/>
                                         <exclude reference="dyF-08-DEC"/>
                                         <exclude reference="5nR-2y-5n0"/>
+                                        <exclude reference="6EY-4J-eT2"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
@@ -148,13 +159,14 @@
                                         <include reference="B8p-xN-Oxa"/>
                                         <include reference="dyF-08-DEC"/>
                                         <include reference="5nR-2y-5n0"/>
+                                        <include reference="6EY-4J-eT2"/>
                                     </mask>
                                 </variation>
                             </scrollView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Hp-eu-1fh">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
-                                    <navigationItem title="Title" id="wbV-Rl-SQV">
+                                    <navigationItem title="Welcome" id="wbV-Rl-SQV">
                                         <barButtonItem key="rightBarButtonItem" title="Finish" id="bPD-mS-Bnr"/>
                                     </navigationItem>
                                 </items>
