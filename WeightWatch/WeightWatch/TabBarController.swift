@@ -14,7 +14,19 @@ class TabBarController: UITabBarController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        
     }
+    
+    // Show Welcome page
+    override func viewDidAppear(animated: Bool) {
+        if User.currentUser.height == 0 && User.currentUser.weight == 0{
+            self.performSegueWithIdentifier("showWelcome", sender: self)
+        }
+        
+    }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
