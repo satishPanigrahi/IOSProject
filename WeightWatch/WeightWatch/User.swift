@@ -40,7 +40,7 @@ class User: NSObject {
             }
             if Static.instance == nil{
                 if let load: AnyObject = NSUserDefaults.standardUserDefaults().objectForKey(userDataKey){
-                    Static.instance = User(data: load as [String: AnyObject])
+                    Static.instance = User(data: load as! [String: AnyObject]) // Shows error without Initilizations of user object
                 }
                 else{
                     Static.instance = User()
@@ -50,5 +50,44 @@ class User: NSObject {
     }
     
 // Initilize user object
+    
+    init(data: [String: AnyObject]) {
+        super.init()
+        age = data[userAgeKey] as! Int
+        height = data[userHeightKey] as! Float
+        weight = data[userWeightKey] as! Float
+        units = data[userUnitsKey] as! String
+        self.calculateBMI()
+        goal = data[userGoalKey] as! Float
+        time = data[userTimeKey] as! Int
+        hasLoaded = true
+        
+    }
+    
+// initialize without any parameter
+    override init() {
+        super.init()
+        
+        age = 0
+        height = 0
+        weight = 0
+        units = ""
+        BMI = 0
+        goal = 0
+        time = 0
+    }
+    
+// BMI calculation
+//metricUnits: Kilogram for weights and meters for weight
+//empericalUnits: pound for weight and feet for height
+    func calculateBMI(){
+        if units == metricUnits{
+            self.BMI = weight/(height * height)
+        }
+        else if units == empericalUnits{
+            let denominator = (height - (height % 1)) * 12 + (height % 1) // (height % 1) represents decimal part
+            self.BMI = (weight * 703) / (denominator * denominator)
+        }
+    }
     
 }
