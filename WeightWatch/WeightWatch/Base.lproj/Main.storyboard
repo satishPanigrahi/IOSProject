@@ -142,6 +142,12 @@
                                             <rect key="frame" x="8" y="301" width="384" height="29"/>
                                         </variation>
                                     </segmentedControl>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="6" minValue="0.0" maxValue="12" translatesAutoresizingMaskIntoConstraints="NO" id="qiy-q4-a5R">
+                                        <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="6" y="374" width="388" height="31"/>
+                                        </variation>
+                                    </slider>
                                 </subviews>
                                 <variation key="default">
                                     <mask key="subviews">
@@ -150,6 +156,7 @@
                                         <exclude reference="dyF-08-DEC"/>
                                         <exclude reference="5nR-2y-5n0"/>
                                         <exclude reference="6EY-4J-eT2"/>
+                                        <exclude reference="qiy-q4-a5R"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
@@ -160,6 +167,7 @@
                                         <include reference="dyF-08-DEC"/>
                                         <include reference="5nR-2y-5n0"/>
                                         <include reference="6EY-4J-eT2"/>
+                                        <include reference="qiy-q4-a5R"/>
                                     </mask>
                                 </variation>
                             </scrollView>
