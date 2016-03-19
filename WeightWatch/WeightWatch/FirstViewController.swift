@@ -10,9 +10,12 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
+    @IBOutlet weak var labelBMI: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.labelBMI.text = "Current BMI: \(Float(User.currentUser.BMI))"
+        
     }
 
     override func didReceiveMemoryWarning() {
