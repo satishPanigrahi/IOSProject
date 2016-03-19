@@ -19,6 +19,56 @@ class WelcomeViewController: UIViewController {
     @IBOutlet weak var hoursSlider: UISlider!
     @IBOutlet weak var hoursOutput: UILabel!
     @IBAction func finishPressed(sender: UIBarButtonItem) {
+        
+        var conversionFail = false
+        
+        if let age = Int(ageField.text!){
+            User.currentUser.age = age
+        }
+        else{
+            conversionFail = true
+        }
+        
+        if (heightField.text! as NSString).floatValue != 0.0{
+            User.currentUser.height = (heightField.text! as NSString).floatValue
+        }
+        else{
+            conversionFail = true
+        }
+        
+        if (weightField.text! as NSString).floatValue != 0.0{
+            User.currentUser.weight = (weightField.text! as NSString).floatValue
+        }
+        else{
+            conversionFail = true
+        }
+        if (weightgoalField.text! as NSString).floatValue != 0.0{
+            User.currentUser.goal = (weightgoalField.text! as NSString).floatValue
+        }
+        else{
+            conversionFail = true
+        }
+        if unitsControl.selectedSegmentIndex == 0{
+            User.currentUser.units = empericalUnits
+        }
+        else{
+            User.currentUser.units = metricUnits
+        }
+        
+        User.currentUser.time = Int(hoursSlider.value)
+        
+        if !conversionFail{
+            User.currentUser.hasLoaded = true
+            User.currentUser.saveUser()
+            
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
+        else{
+           let alert = UIAlertView(title: "Error", message: "You must input correct information into the text fields", delegate: nil, cancelButtonTitle: "OK")
+                     
+            alert.show()
+        }
+        
     }
     
     override func viewDidLoad() {
