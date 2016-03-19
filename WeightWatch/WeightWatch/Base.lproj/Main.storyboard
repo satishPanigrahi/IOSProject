@@ -288,6 +288,15 @@
                         </variation>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="ageField" destination="Bfg-2S-2sv" id="Kcg-pu-Rfz"/>
+                        <outlet property="heightField" destination="B8p-xN-Oxa" id="1dv-cQ-wPe"/>
+                        <outlet property="hoursOutput" destination="y65-8O-CxG" id="Ojp-kN-C7M"/>
+                        <outlet property="hoursSlider" destination="qiy-q4-a5R" id="50E-bE-EdH"/>
+                        <outlet property="unitsControl" destination="6EY-4J-eT2" id="IZI-Qs-Enn"/>
+                        <outlet property="weightField" destination="5nR-2y-5n0" id="MQh-Na-TTN"/>
+                        <outlet property="weightgoalField" destination="dyF-08-DEC" id="HmI-r4-hF3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sZZ-Rv-If4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,7 +9,16 @@
 import UIKit
 
 class WelcomeViewController: UIViewController {
-
+    
+    //Creat outlet
+    @IBOutlet weak var ageField: UITextField!
+    @IBOutlet weak var heightField: UITextField!
+    @IBOutlet weak var weightgoalField: UITextField!
+    @IBOutlet weak var weightField: UITextField!
+    @IBOutlet weak var unitsControl: UISegmentedControl!
+    @IBOutlet weak var hoursSlider: UISlider!
+    @IBOutlet weak var hoursOutput: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
