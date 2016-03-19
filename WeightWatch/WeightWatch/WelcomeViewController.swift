@@ -57,6 +57,7 @@ class WelcomeViewController: UIViewController {
         
         User.currentUser.time = Int(hoursSlider.value)
         
+        // save and dismiss welcome view
         if !conversionFail{
             User.currentUser.hasLoaded = true
             User.currentUser.saveUser()
@@ -75,8 +76,15 @@ class WelcomeViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        // Dispaly slider vlaue in the label
         hoursSlider.addTarget(self, action: "sliderChanged:", forControlEvents: .ValueChanged)
-        hoursOutput.text = "6 hours per day"
+        hoursOutput.text = "6 available hours per day"
+        
+        // Appropriate value of place holder bases on units unitsChanged
+        unitsControl.addTarget(self, action: "unitsChanged:", forControlEvents: .ValueChanged)
+        
+        self.unitsChanged(unitsControl)
         
     }
     // added: Satish // TODO for IOS 9
@@ -98,10 +106,28 @@ class WelcomeViewController: UIViewController {
     }
     
     func sliderChanged(sender: UISlider){
-        self.hoursOutput.text = "\(Int(sender.value)) hours per day"
+        self.hoursOutput.text = "\(Int(sender.value)) available hours per day"
     }
     
     
+    func unitsChanged(sender: UISegmentedControl){
+        heightField.text = ""
+        weightField.text = ""
+        weightgoalField.text = ""
+        
+        if sender.selectedSegmentIndex == 0 // Emperical
+        {
+            heightField.placeholder = "Height (feet)"
+            weightField.placeholder = "Weight (pounds)"
+            weightgoalField.placeholder = "Weight Gola (pounds)"
+        }
+        else // Metric
+        {
+            heightField.placeholder = "Height (meters)"
+            weightField.placeholder = "Weight (kg)"
+            weightgoalField.placeholder = "Weight Gola (kg)"
+        }
+    }
     
 
     /*
