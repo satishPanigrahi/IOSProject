@@ -65,7 +65,7 @@ class WelcomeViewController: UIViewController {
         }
         else{
            let alert = UIAlertView(title: "Error", message: "You must input correct information into the text fields", delegate: nil, cancelButtonTitle: "OK")
-                     
+            
             alert.show()
         }
         
@@ -75,6 +75,8 @@ class WelcomeViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        hoursSlider.addTarget(self, action: "sliderChanged:", forControlEvents: .ValueChanged)
+        hoursOutput.text = "6 hours per day"
         
     }
     // added: Satish // TODO for IOS 9
@@ -94,6 +96,12 @@ class WelcomeViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.]
     }
+    
+    func sliderChanged(sender: UISlider){
+        self.hoursOutput.text = "\(Int(sender.value)) hours per day"
+    }
+    
+    
     
 
     /*
