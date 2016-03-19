@@ -18,6 +18,8 @@ class WelcomeViewController: UIViewController {
     @IBOutlet weak var unitsControl: UISegmentedControl!
     @IBOutlet weak var hoursSlider: UISlider!
     @IBOutlet weak var hoursOutput: UILabel!
+    @IBAction func finishPressed(sender: UIBarButtonItem) {
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
