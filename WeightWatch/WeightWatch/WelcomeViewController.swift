@@ -59,6 +59,16 @@ class WelcomeViewController: UIViewController {
         
         // save and dismiss welcome view
         if !conversionFail{
+           // User.currentUser.BMI = Float(User.currentUser.calculateBMI())  // not todo: Why??
+            // added to refresh the value at label
+            
+            if User.currentUser.units == metricUnits{
+                User.currentUser.BMI = User.currentUser.weight/(User.currentUser.height * User.currentUser.height)
+            }
+            else if User.currentUser.units == empericalUnits{
+                let denominator = (User.currentUser.height - (User.currentUser.height % 1)) * 12 + (User.currentUser.height % 1)
+                User.currentUser.BMI = (User.currentUser.weight * 703) / (denominator * denominator)
+            }
             User.currentUser.hasLoaded = true
             User.currentUser.saveUser()
             
@@ -69,6 +79,10 @@ class WelcomeViewController: UIViewController {
             
             alert.show()
         }
+        
+        //update BMI
+        
+
         
     }
     

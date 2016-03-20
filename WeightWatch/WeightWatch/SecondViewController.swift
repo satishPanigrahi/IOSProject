@@ -11,10 +11,13 @@ import UIKit
 class SecondViewController: UIViewController {
 
     @IBAction func buttonAdd(sender: AnyObject) {
-        
+        //self.performSegueWithIdentifier("showWelcome", sender: self)
+        tabBarController?.selectedIndex = 0
     }
     @IBAction func buttonReset(sender: AnyObject) {
-        
+        //NSUserDefaults.standardUserDefaults().removeObjectForKey(userDataKey)
+        //self.performSegueWithIdentifier("showWelcome", sender: self)
+       //tabBarController?.viewWillAppear(true)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
