@@ -14,6 +14,12 @@ class FirstViewController: UIViewController {
     @IBOutlet var labelcurrentWeight: UILabel!
     @IBOutlet var Photo: UIImageView!
     @IBOutlet weak var labelBMI: UILabel!
+    
+    @IBAction func buttonUpdatePressed(sender: AnyObject) {
+        tabBarController?.selectedIndex = 1
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
