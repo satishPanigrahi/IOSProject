@@ -343,6 +343,11 @@
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Update" image="second" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="textUpdateHeight" destination="smo-yd-i2w" id="qgx-PS-6r4"/>
+                        <outlet property="textUpdateWeight" destination="kum-MW-bxN" id="Ygl-mh-uqr"/>
+                        <outlet property="updateUnits" destination="fZj-1C-3nz" id="bba-YH-KTS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
