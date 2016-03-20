@@ -101,6 +101,11 @@ class WelcomeViewController: UIViewController {
         self.unitsChanged(unitsControl)
         
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        self.performSegueWithIdentifier("loginView", sender: self)
+    }
+    
     // added: Satish // TODO for IOS 9
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
