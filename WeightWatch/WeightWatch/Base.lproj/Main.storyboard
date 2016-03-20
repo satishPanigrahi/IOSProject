@@ -226,9 +226,6 @@
                                 <state key="normal" title="Reset">
                                     <color key="titleColor" red="0.0" green="0.17702047409999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="694" width="394" height="49"/>
-                                </variation>
                                 <connections>
                                     <action selector="buttonReset:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="qY2-Sj-ysz"/>
                                 </connections>
@@ -239,9 +236,6 @@
                                 <state key="normal" title="Add">
                                     <color key="titleColor" red="0.0" green="0.17702047409999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="637" width="394" height="49"/>
-                                </variation>
                                 <connections>
                                     <action selector="buttonAdd:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="ujM-0a-k2R"/>
                                 </connections>
@@ -266,11 +260,11 @@
                                 <exclude reference="oRi-6u-RJs"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Bps-oe-0C7"/>
-                                <exclude reference="gbn-c2-QlB"/>
                                 <exclude reference="TJx-tY-rPn"/>
                                 <exclude reference="hiC-30-6kZ"/>
                                 <exclude reference="vZv-Nu-bBP"/>
+                                <exclude reference="Bps-oe-0C7"/>
+                                <exclude reference="gbn-c2-QlB"/>
                                 <exclude reference="kpn-4O-fKh"/>
                             </mask>
                         </variation>
@@ -280,11 +274,11 @@
                                 <include reference="oRi-6u-RJs"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Bps-oe-0C7"/>
-                                <include reference="gbn-c2-QlB"/>
                                 <include reference="TJx-tY-rPn"/>
                                 <include reference="hiC-30-6kZ"/>
                                 <include reference="vZv-Nu-bBP"/>
+                                <include reference="Bps-oe-0C7"/>
+                                <include reference="gbn-c2-QlB"/>
                                 <include reference="kpn-4O-fKh"/>
                             </mask>
                         </variation>

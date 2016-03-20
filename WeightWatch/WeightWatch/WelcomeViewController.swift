@@ -125,9 +125,9 @@ class WelcomeViewController: UIViewController {
     
     
     func unitsChanged(sender: UISegmentedControl){
-        heightField.text = ""
-        weightField.text = ""
-        weightgoalField.text = ""
+//        heightField.text = ""
+//        weightField.text = ""
+//        weightgoalField.text = ""
         
         if sender.selectedSegmentIndex == 0 // Emperical
         {
