@@ -29,7 +29,7 @@
                                     <rect key="frame" x="0.0" y="410" width="400" height="36.5"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Normal or Healthy BMI 18.5 to 24.9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Normal or Healthy BMI 18.5 to 24.9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
                                 <rect key="frame" x="203" y="329" width="194.5" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.97063577586206895" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -41,18 +41,12 @@
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5UA-v3-uXZ">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="-4" y="28" width="408" height="330"/>
-                                </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghC-6L-hhh">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="20" y="640" width="360" height="64"/>
-                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Sl-GM-CQC">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -60,9 +54,6 @@
                                 <state key="normal" title="Update your weight">
                                     <color key="titleColor" red="0.0" green="0.17702047413793104" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="-4" y="712" width="404" height="39"/>
-                                </variation>
                                 <connections>
                                     <action selector="buttonUpdatePressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="BNV-kq-Kuv"/>
                                 </connections>
@@ -72,9 +63,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="20" y="535" width="360" height="68"/>
-                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -122,21 +110,8 @@
                                 <exclude reference="rfF-A1-1Xe"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="85P-F4-ISc"/>
-                                <exclude reference="XIg-Zs-gxb"/>
-                                <exclude reference="cJR-Rz-AcG"/>
-                                <exclude reference="Oqw-Gt-Hss"/>
-                                <exclude reference="Qgv-SE-JZq"/>
-                                <exclude reference="mqE-6W-uDS"/>
-                                <exclude reference="xG9-ac-CVf"/>
-                                <exclude reference="k82-n8-FKb"/>
-                                <exclude reference="Eca-51-GyM"/>
-                                <exclude reference="LHV-tt-rRB"/>
-                                <exclude reference="MOu-Fc-VSp"/>
-                                <exclude reference="PVI-6Z-ynS"/>
-                                <exclude reference="fvd-SI-y35"/>
-                                <exclude reference="sRh-bM-26a"/>
-                                <exclude reference="zBj-Wa-qM5"/>
+                                <exclude reference="URz-1l-ZUu"/>
+                                <exclude reference="unu-Lz-gmc"/>
                                 <exclude reference="5A1-Do-cUj"/>
                                 <exclude reference="5qh-en-yuJ"/>
                                 <exclude reference="BNe-fg-EYy"/>
@@ -145,8 +120,21 @@
                                 <exclude reference="VBZ-vZ-fkS"/>
                                 <exclude reference="acw-t8-pH2"/>
                                 <exclude reference="bkD-4C-E5j"/>
-                                <exclude reference="URz-1l-ZUu"/>
-                                <exclude reference="unu-Lz-gmc"/>
+                                <exclude reference="Eca-51-GyM"/>
+                                <exclude reference="LHV-tt-rRB"/>
+                                <exclude reference="MOu-Fc-VSp"/>
+                                <exclude reference="PVI-6Z-ynS"/>
+                                <exclude reference="fvd-SI-y35"/>
+                                <exclude reference="sRh-bM-26a"/>
+                                <exclude reference="zBj-Wa-qM5"/>
+                                <exclude reference="85P-F4-ISc"/>
+                                <exclude reference="XIg-Zs-gxb"/>
+                                <exclude reference="cJR-Rz-AcG"/>
+                                <exclude reference="Oqw-Gt-Hss"/>
+                                <exclude reference="Qgv-SE-JZq"/>
+                                <exclude reference="mqE-6W-uDS"/>
+                                <exclude reference="xG9-ac-CVf"/>
+                                <exclude reference="k82-n8-FKb"/>
                                 <exclude reference="Isd-Ix-1HU"/>
                                 <exclude reference="Mn2-mW-4aO"/>
                                 <exclude reference="ZFT-nL-jCU"/>
@@ -162,21 +150,8 @@
                                 <include reference="rfF-A1-1Xe"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="85P-F4-ISc"/>
-                                <include reference="XIg-Zs-gxb"/>
-                                <include reference="cJR-Rz-AcG"/>
-                                <include reference="Oqw-Gt-Hss"/>
-                                <include reference="Qgv-SE-JZq"/>
-                                <include reference="mqE-6W-uDS"/>
-                                <include reference="xG9-ac-CVf"/>
-                                <include reference="k82-n8-FKb"/>
-                                <include reference="Eca-51-GyM"/>
-                                <include reference="LHV-tt-rRB"/>
-                                <include reference="MOu-Fc-VSp"/>
-                                <include reference="PVI-6Z-ynS"/>
-                                <include reference="fvd-SI-y35"/>
-                                <include reference="sRh-bM-26a"/>
-                                <include reference="zBj-Wa-qM5"/>
+                                <include reference="URz-1l-ZUu"/>
+                                <include reference="unu-Lz-gmc"/>
                                 <include reference="5A1-Do-cUj"/>
                                 <include reference="5qh-en-yuJ"/>
                                 <include reference="BNe-fg-EYy"/>
@@ -185,8 +160,21 @@
                                 <include reference="VBZ-vZ-fkS"/>
                                 <include reference="acw-t8-pH2"/>
                                 <include reference="bkD-4C-E5j"/>
-                                <include reference="URz-1l-ZUu"/>
-                                <include reference="unu-Lz-gmc"/>
+                                <include reference="Eca-51-GyM"/>
+                                <include reference="LHV-tt-rRB"/>
+                                <include reference="MOu-Fc-VSp"/>
+                                <include reference="PVI-6Z-ynS"/>
+                                <include reference="fvd-SI-y35"/>
+                                <include reference="sRh-bM-26a"/>
+                                <include reference="zBj-Wa-qM5"/>
+                                <include reference="85P-F4-ISc"/>
+                                <include reference="XIg-Zs-gxb"/>
+                                <include reference="cJR-Rz-AcG"/>
+                                <include reference="Oqw-Gt-Hss"/>
+                                <include reference="Qgv-SE-JZq"/>
+                                <include reference="mqE-6W-uDS"/>
+                                <include reference="xG9-ac-CVf"/>
+                                <include reference="k82-n8-FKb"/>
                                 <include reference="Isd-Ix-1HU"/>
                                 <include reference="Mn2-mW-4aO"/>
                                 <include reference="ZFT-nL-jCU"/>
