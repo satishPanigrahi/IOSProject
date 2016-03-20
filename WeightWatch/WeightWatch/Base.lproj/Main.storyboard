@@ -220,14 +220,74 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GuV-kQ-xDm">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="0.0" green="0.17702047409999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="694" width="394" height="49"/>
+                                </variation>
+                                <connections>
+                                    <action selector="buttonReset:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="qY2-Sj-ysz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRi-6u-RJs">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.97063577590000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleColor" red="0.0" green="0.17702047409999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="637" width="394" height="49"/>
+                                </variation>
+                                <connections>
+                                    <action selector="buttonAdd:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="ujM-0a-k2R"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="oRi-6u-RJs" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="Bps-oe-0C7"/>
                             <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
                             <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GuV-kQ-xDm" secondAttribute="trailing" id="TJx-tY-rPn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oRi-6u-RJs" secondAttribute="trailing" id="gbn-c2-QlB"/>
+                            <constraint firstItem="GuV-kQ-xDm" firstAttribute="top" secondItem="oRi-6u-RJs" secondAttribute="bottom" constant="8" id="hiC-30-6kZ"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="GuV-kQ-xDm" secondAttribute="bottom" constant="8" id="kpn-4O-fKh"/>
                             <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
                             <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                            <constraint firstItem="GuV-kQ-xDm" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="vZv-Nu-bBP"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="GuV-kQ-xDm"/>
+                                <exclude reference="oRi-6u-RJs"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Bps-oe-0C7"/>
+                                <exclude reference="gbn-c2-QlB"/>
+                                <exclude reference="TJx-tY-rPn"/>
+                                <exclude reference="hiC-30-6kZ"/>
+                                <exclude reference="vZv-Nu-bBP"/>
+                                <exclude reference="kpn-4O-fKh"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="GuV-kQ-xDm"/>
+                                <include reference="oRi-6u-RJs"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Bps-oe-0C7"/>
+                                <include reference="gbn-c2-QlB"/>
+                                <include reference="TJx-tY-rPn"/>
+                                <include reference="hiC-30-6kZ"/>
+                                <include reference="vZv-Nu-bBP"/>
+                                <include reference="kpn-4O-fKh"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Update" image="second" id="cPa-gy-q4n"/>
                 </viewController>
