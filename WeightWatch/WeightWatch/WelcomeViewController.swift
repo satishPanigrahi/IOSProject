@@ -103,7 +103,13 @@ class WelcomeViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
-        self.performSegueWithIdentifier("loginView", sender: self)
+        
+        let isUserLoggedIn = NSUserDefaults.standardUserDefaults().boolForKey("isUserLoggedin");
+        
+        if (!isUserLoggedIn){
+            self.performSegueWithIdentifier("loginView", sender: self)
+        }
+        
     }
     
     // added: Satish // TODO for IOS 9
