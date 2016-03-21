@@ -3,9 +3,23 @@ Objective: Project for BMI Calculation
 
 References:
 1) http://totallyswift.com/series/ios-development/
+2) simplyi/UserLoginAndRegisterExampleInSwift (I reffered to you tube) 
 
 Description:
 
-To be added
+1) Registartion page
+2) Login page
+3) Info page to enter
+4) Dispaly your BMI
+
+Features:
+Remember the useid. no need to login each time you enter to the tap 
+
+Future direction:
+
+1) Add log out option
+
+2) To store historic data 
+
 
 
