@@ -23,11 +23,11 @@ class RegisterPageViewController: UIViewController {
     @IBAction func RegisterButtonPressed(sender: AnyObject) {
         let userEmail = userEmailTextField.text
         let userPassword = userPasswordTextField.text
-        let userRpeatPassword = userRepeatPasswordTextField.text
+        let userRepeatPassword = userRepeatPasswordTextField.text
         
         // check for empty field
         
-        if (userEmail!.isEmpty || userPassword!.isEmpty || userRpeatPassword!.isEmpty){
+        if (userEmail!.isEmpty || userPassword!.isEmpty || userRepeatPassword!.isEmpty){
             //dispaly error msg
             displayMyAlertMsg("All Fileds are required")
             return;
@@ -35,7 +35,7 @@ class RegisterPageViewController: UIViewController {
         
         // check for password match
         
-        if (userPasswordTextField != userRepeatPasswordTextField){
+        if (userPassword != userRepeatPassword){
             //display error msg
             displayMyAlertMsg("Passwords do not match")
             return;
@@ -49,7 +49,15 @@ class RegisterPageViewController: UIViewController {
         NSUserDefaults.standardUserDefaults().synchronize();
         
         // Dispaly alert msg for confirmation
+        let myAlert = UIAlertController(title: "Alert", message: "Registration Successful, Thank you", preferredStyle: UIAlertControllerStyle.Alert)
         
+        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default){
+            ACTION in
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
+        
+        myAlert.addAction(okAction)
+        self.presentViewController(myAlert, animated: true, completion: nil);
     }
     
     func displayMyAlertMsg(UserMsg:String){
