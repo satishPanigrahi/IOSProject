@@ -574,10 +574,10 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="-711"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="kHL-5X-Goy">
             <objects>
-                <viewController id="dZ8-5E-AzC" sceneMemberID="viewController">
+                <viewController id="dZ8-5E-AzC" customClass="LoginViewController" customModule="WeightWatch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="t7n-vT-Jxo"/>
                         <viewControllerLayoutGuide type="bottom" id="8YL-U5-D8M"/>
@@ -653,6 +653,9 @@
                                         <include reference="Gy3-TL-3DP"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="dZ8-5E-AzC" eventType="touchUpInside" id="ML7-zN-ZQC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ulM-09-wm8">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -750,6 +753,10 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="userEmailTextFiled" destination="V93-t6-kLK" id="aMQ-rh-S2T"/>
+                        <outlet property="userPasswordTextFiled" destination="SnW-Rb-H1T" id="bJg-iK-hlf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNV-q5-SxP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
