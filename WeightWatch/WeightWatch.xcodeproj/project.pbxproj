@@ -16,6 +16,7 @@
 		26A525A41C9B72F6009556B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26A525A31C9B72F6009556B4 /* Assets.xcassets */; };
 		26A525A71C9B72F6009556B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26A525A51C9B72F6009556B4 /* LaunchScreen.storyboard */; };
 		26A525AF1C9B749B009556B4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A525AE1C9B749B009556B4 /* User.swift */; };
+		26C29D321CA01C22005A08C1 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C29D311CA01C22005A08C1 /* RegisterPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		26A525A61C9B72F6009556B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26A525A81C9B72F6009556B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26A525AE1C9B749B009556B4 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		26C29D311CA01C22005A08C1 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				26A525A31C9B72F6009556B4 /* Assets.xcassets */,
 				26A525A51C9B72F6009556B4 /* LaunchScreen.storyboard */,
 				26A525A81C9B72F6009556B4 /* Info.plist */,
+				26C29D311CA01C22005A08C1 /* RegisterPageViewController.swift */,
 			);
 			path = WeightWatch;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26A525AF1C9B749B009556B4 /* User.swift in Sources */,
+				26C29D321CA01C22005A08C1 /* RegisterPageViewController.swift in Sources */,
 				269727431C9C367700E34409 /* WelcomeViewController.swift in Sources */,
 				26A5259F1C9B72F6009556B4 /* SecondViewController.swift in Sources */,
 				269727491C9C682E00E34409 /* TabBarController.swift in Sources */,

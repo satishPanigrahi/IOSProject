@@ -755,10 +755,10 @@
             </objects>
             <point key="canvasLocation" x="711" y="-769.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Register Page View Controller-->
         <scene sceneID="BVD-ql-xK8">
             <objects>
-                <viewController id="dLb-16-zfw" sceneMemberID="viewController">
+                <viewController id="dLb-16-zfw" customClass="RegisterPageViewController" customModule="WeightWatch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eVv-5M-p2a"/>
                         <viewControllerLayoutGuide type="bottom" id="mM5-fu-7yH"/>
@@ -872,6 +872,9 @@
                                         <include reference="RX9-96-ePL"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="RegisterButtonPressed:" destination="dLb-16-zfw" eventType="touchUpInside" id="xrf-2W-APe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IbV-E3-Wek">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -951,35 +954,35 @@
                                 <exclude reference="w9q-3N-WQi"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="QdG-9j-l3M"/>
-                                <exclude reference="fmP-bb-ys2"/>
-                                <exclude reference="xC4-9U-fBh"/>
+                                <exclude reference="4Hb-Fk-5EG"/>
+                                <exclude reference="4KQ-xO-tMG"/>
+                                <exclude reference="V99-aU-QPy"/>
+                                <exclude reference="2v3-8m-6rJ"/>
+                                <exclude reference="S7w-gC-2S8"/>
+                                <exclude reference="TPp-ua-rbf"/>
+                                <exclude reference="Rvs-eW-eH4"/>
+                                <exclude reference="so4-QR-fZf"/>
+                                <exclude reference="RKY-rz-bTl"/>
+                                <exclude reference="UeI-B8-Cxl"/>
+                                <exclude reference="hMU-C5-9kg"/>
+                                <exclude reference="vAU-Eb-foJ"/>
+                                <exclude reference="czg-9M-Vc5"/>
+                                <exclude reference="eKJ-gV-YCq"/>
+                                <exclude reference="wgP-1T-Z1O"/>
                                 <exclude reference="TBd-d5-siX"/>
                                 <exclude reference="gFR-Xb-TsW"/>
                                 <exclude reference="pKT-kv-qza"/>
-                                <exclude reference="V99-aU-QPy"/>
+                                <exclude reference="QdG-9j-l3M"/>
+                                <exclude reference="fmP-bb-ys2"/>
+                                <exclude reference="xC4-9U-fBh"/>
                                 <exclude reference="BGP-a5-9YU"/>
                                 <exclude reference="Dqm-q7-3AL"/>
                                 <exclude reference="LtW-dT-E93"/>
                                 <exclude reference="Wes-Dc-3hm"/>
                                 <exclude reference="oft-lq-LlH"/>
                                 <exclude reference="xer-KW-exL"/>
-                                <exclude reference="4Hb-Fk-5EG"/>
-                                <exclude reference="4KQ-xO-tMG"/>
-                                <exclude reference="czg-9M-Vc5"/>
-                                <exclude reference="eKJ-gV-YCq"/>
-                                <exclude reference="wgP-1T-Z1O"/>
-                                <exclude reference="2v3-8m-6rJ"/>
-                                <exclude reference="S7w-gC-2S8"/>
-                                <exclude reference="TPp-ua-rbf"/>
-                                <exclude reference="RKY-rz-bTl"/>
-                                <exclude reference="UeI-B8-Cxl"/>
-                                <exclude reference="hMU-C5-9kg"/>
-                                <exclude reference="vAU-Eb-foJ"/>
                                 <exclude reference="LSh-kw-AUR"/>
                                 <exclude reference="P0K-a9-WNC"/>
-                                <exclude reference="Rvs-eW-eH4"/>
-                                <exclude reference="so4-QR-fZf"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -996,38 +999,43 @@
                                 <include reference="w9q-3N-WQi"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="QdG-9j-l3M"/>
-                                <include reference="fmP-bb-ys2"/>
-                                <include reference="xC4-9U-fBh"/>
+                                <include reference="4Hb-Fk-5EG"/>
+                                <include reference="4KQ-xO-tMG"/>
+                                <include reference="V99-aU-QPy"/>
+                                <include reference="2v3-8m-6rJ"/>
+                                <include reference="S7w-gC-2S8"/>
+                                <include reference="TPp-ua-rbf"/>
+                                <include reference="Rvs-eW-eH4"/>
+                                <include reference="so4-QR-fZf"/>
+                                <include reference="RKY-rz-bTl"/>
+                                <include reference="UeI-B8-Cxl"/>
+                                <include reference="hMU-C5-9kg"/>
+                                <include reference="vAU-Eb-foJ"/>
+                                <include reference="czg-9M-Vc5"/>
+                                <include reference="eKJ-gV-YCq"/>
+                                <include reference="wgP-1T-Z1O"/>
                                 <include reference="TBd-d5-siX"/>
                                 <include reference="gFR-Xb-TsW"/>
                                 <include reference="pKT-kv-qza"/>
-                                <include reference="V99-aU-QPy"/>
+                                <include reference="QdG-9j-l3M"/>
+                                <include reference="fmP-bb-ys2"/>
+                                <include reference="xC4-9U-fBh"/>
                                 <include reference="BGP-a5-9YU"/>
                                 <include reference="Dqm-q7-3AL"/>
                                 <include reference="LtW-dT-E93"/>
                                 <include reference="Wes-Dc-3hm"/>
                                 <include reference="oft-lq-LlH"/>
                                 <include reference="xer-KW-exL"/>
-                                <include reference="4Hb-Fk-5EG"/>
-                                <include reference="4KQ-xO-tMG"/>
-                                <include reference="czg-9M-Vc5"/>
-                                <include reference="eKJ-gV-YCq"/>
-                                <include reference="wgP-1T-Z1O"/>
-                                <include reference="2v3-8m-6rJ"/>
-                                <include reference="S7w-gC-2S8"/>
-                                <include reference="TPp-ua-rbf"/>
-                                <include reference="RKY-rz-bTl"/>
-                                <include reference="UeI-B8-Cxl"/>
-                                <include reference="hMU-C5-9kg"/>
-                                <include reference="vAU-Eb-foJ"/>
                                 <include reference="LSh-kw-AUR"/>
                                 <include reference="P0K-a9-WNC"/>
-                                <include reference="Rvs-eW-eH4"/>
-                                <include reference="so4-QR-fZf"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="userEmailTextField" destination="fTu-ef-A0F" id="KOb-p8-o7d"/>
+                        <outlet property="userPasswordTextField" destination="97i-KO-iFK" id="XeM-7m-773"/>
+                        <outlet property="userRepeatPasswordTextField" destination="w9q-3N-WQi" id="ZzC-ec-BR5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MGL-Wz-NpF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
